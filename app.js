@@ -5,14 +5,13 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var hbs = require('express-hbs');
+const moment = require('moment');
+
+const dateFormat = 'dddd, MMMM D, YYYY';
 
 var routes = require('./routes/index');
 
 var app = express();
-
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(__dirname + '/public/favicon.ico'));
@@ -26,6 +25,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.engine('hbs', hbs.express3());
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
+hbs.registerHelper('formatDate', function(ISODate) {
+  return moment(ISODate).format(dateFormat);
+});
+
 
 app.use('/', routes);
 
