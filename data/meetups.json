@@ -1,6 +1,82 @@
 [
-    {
-        "meetupUrl": "https://www.meetup.com/startupedmonton/events/134790712/",
-        "date": "2013-09-05"
-    }
+  {
+    "meetupUrl": "https://www.meetup.com/startupedmonton/events/134790712/",
+    "date": "2013-09-05"
+  },
+  {
+    "meetupUrl": "https://www.meetup.com/startupedmonton/events/139661482/",
+    "date": "2013-10-4"
+  },
+  {
+    "meetupUrl": "https://www.meetup.com/startupedmonton/events/dfgrngyrpbkb/",
+    "date": "2013-11-07"
+  },
+  {
+    "meetupUrl": "https://www.meetup.com/startupedmonton/events/dfgrngyrqbhb/",
+    "date": "2013-12-06"
+  },
+  {
+    "meetupUrl": "https://www.meetup.com/startupedmonton/events/155178102/",
+    "date": "2014-01-09"
+  },
+  {
+    "meetupUrl": "https://www.meetup.com/startupedmonton/events/dfgrngysdbjb/",
+    "date": "2014-02-06",
+    "notesUrl": "https://www.exchangejs.com/feb-2014-news/"
+  },
+  {
+    "meetupUrl": "https://www.meetup.com/startupedmonton/events/dfgrngysfbjb/",
+    "date": "2014-03-06",
+    "notesUrl": "https://exchangejs.github.io/march-2014-notes/"
+  },
+  {
+    "meetupUrl": "https://www.meetup.com/startupedmonton/events/dfgrngysgbfb/",
+    "date": "2014-04-03",
+    "notesUrl": "https://exchangejs.github.io/april-2014-notes"
+  },
+  {
+    "meetupUrl": "https://www.meetup.com/startupedmonton/events/dfgrngyshbcb/",
+    "date": "2014-05-01",
+    "notesUrl": "https://www.exchangejs.com/may-2014-notes/"
+  },
+  {
+    "meetupUrl": "https://www.meetup.com/startupedmonton/events/183063052/",
+    "date": "2014-06-05",
+    "notesUrl": "https://www.exchangejs.com/june-2014-notes/"
+  },
+  {
+    "meetupUrl": "https://www.meetup.com/startupedmonton/events/187551052/",
+    "date": "2014-07-03",
+    "notesUrl": "https://www.exchangejs.com/july-2014-notes/"
+  },
+  {
+    "meetupUrl": "https://www.meetup.com/startupedmonton/events/193165772/",
+    "date": "2014-08-07",
+    "notesUrl": "https://www.exchangejs.com/august-2014-notes/"
+  },
+  {
+    "meetupUrl": "https://www.meetup.com/startupedmonton/events/qgdfzjysmbgb/",
+    "date": "2014-09-04",
+    "notesUrl": "https://www.exchangejs.com/sept-2014-notes/"
+  },
+  {
+    "meetupUrl": "https://www.meetup.com/startupedmonton/events/qgdfzjysmbgb/",
+    "date": "2014-10-04",
+    "notesUrl": "https://exchangejs.github.io/oct-2014-notes"
+  },
+  {
+    "meetupUrl": "https://www.meetup.com/startupedmonton/events/qgdfzjysmbgb/",
+    "date": "2014-11-06",
+    "notesUrl": "https://exchangejs.github.io/nov-2014-notes"
+  },
+  {
+    "meetupUrl": "https://www.meetup.com/startupedmonton/events/qgdfzjysmbgb/",
+    "date": "2015-01-08",
+    "notesUrl": "https://exchangejs.github.io/jan-2015-notes"
+  },
+  {
+    "meetupUrl": "https://www.meetup.com/startupedmonton/events/219781554/",
+    "date": "2015-02-05",
+    "notesUrl": "https://exchangejs.github.io/feb-2015-notes"
+  }
 ]
