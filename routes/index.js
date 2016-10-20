@@ -19,7 +19,10 @@ router.get('/api/events', function(req, res) {
       let events = events.results.filter(evt => evt.name.indexOf("Exchange.js") != -1);
       res.json(events);
     }
-  })
+  });
+});
+router.get('/code-of-conduct', function(req, res) {
+  res.render('code-of-conduct', {title: 'Code of Conduct'});
 });
 
 module.exports = router;
