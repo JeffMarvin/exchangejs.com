@@ -15,7 +15,11 @@ First, install your dependencies:
 
     yarn install
 
-You can then run the local development server with:
+You can then run the local node server with:
+
+    yarn start
+
+To build the front-end scripts use:
 
     yarn dev
 
