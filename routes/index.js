@@ -12,11 +12,16 @@ router.get('/', function(req, res) {
 router.get('/api/events', function(req, res) {
   meetup.getEvents({
     group_urlname: "startupedmonton"
-  }, function(error, events) {
+  }, function(error, evts) {
     if (error) {
+      if (error.status === 401) {
+        res.json({
+            error: "Please configure a MEETUP_API environmental variable with a Meetup API key, available from https://secure.meetup.com/meetup_api/key/"
+        })
+      }
       res.json(error);
     } else {
-      let events = events.results.filter(evt => evt.name.indexOf("Exchange.js") != -1);
+      let events = evts.results.filter(evt => evt.name.indexOf("Exchange.js") != -1);
       res.json(events);
     }
   });
