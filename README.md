@@ -10,6 +10,7 @@ Before trying to get started, make sure you've installed:
 
  * [Node.js] (https://nodejs.org/en/download/)
  * [Yarn package manager](https://yarnpkg.com/en/docs/install)
+ * [Heroku CLI](https://devcenter.heroku.com/articles/heroku-command-line)
 
 First, install your dependencies:
 
