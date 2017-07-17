@@ -8,21 +8,29 @@ We are tracking all issues on the [exchangejs.github.io repository](https://gith
 
 Before trying to get started, make sure you've installed:
 
- * [Node.js] (https://nodejs.org/en/download/)
+ * [Node.js](https://nodejs.org/en/download/)
  * [Yarn package manager](https://yarnpkg.com/en/docs/install)
- * [Heroku CLI](https://devcenter.heroku.com/articles/heroku-command-line)
+ * [Mongodb](https://www.mongodb.com/)
 
-First, install your dependencies:
+ Mongodb needs to be running before you can start things up. If you installed it with Homebrew then you can do this with:
+
+    brew services start mongodb
+
+Next, install your dependencies:
 
     yarn install
 
-You can then run the local node server with:
+Crop here create a copy of the `.env` that configures environmental variables for your app:
 
-    yarn start
+    cp .env_example .env
 
-To build the front-end scripts use:
+Edit it and update your MONGO_URI, COOKIE_SECRET, and URL settings.
+
+You can then run the local development server with:
 
     yarn dev
+
+Once the app is running, go to your localhost:3000/keystone (or, if you changed the URL or port in the config file, whatever is appropriate) and login with 'user@example.com' and 'admin' as the password. Once logged in, select Users and change your information.
 
 To deploy your changes just push to GitHub. Once they're merged into master
 they'll deploy to Heroku and our site automatically in a few minutes.

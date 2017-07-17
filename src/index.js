@@ -1,19 +1,24 @@
-// Register the service worker
-if (navigator.serviceWorker) {
-	document.body.classList.add('service-workers');
 
-	navigator.serviceWorker.register('worker.bundle.js').then(function(reg) {
-	  console.log('SW registered. ◕‿◕', reg);
-	}, function(err) {
-	  console.log('SW register failed! ಠ_ಠ', err);
+jQuery.fn.startVideoInModal = function(modalSelector, videoSelector) {
+	const URL_BASE = 'https://www.youtube.com/embed/';
+
+	$(modalSelector).on('hide.bs.modal', function() {
+		$(videoSelector).attr('src', '');
+		return true;
 	});
 
-	// Wire up SW interface
-	document.getElementById('sw-ping').
-		addEventListener('click', function(e) {
-			e.preventDefault();
+	return this.click(function(e) {
+		e.preventDefault();
 
-			console.log('ping');
-			navigator.serviceWorker.controller.postMessage("ping");
-		});
-}
+		const src = URL_BASE + $(this).data('video-id') + '?rel=0&autoplay=1';
+		$(modalSelector)
+			.modal('show')
+			.on('shown.bs.modal', function() {
+				$(videoSelector).attr('src', src);
+			});
+	});
+};
+
+jQuery(document).ready(function($) {
+	$('.talk__videoLink').startVideoInModal('#video-modal', '#video-iframe');
+});
